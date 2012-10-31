@@ -15,9 +15,9 @@ WebToPay Lib DotNet is a library that will allow you to make payment requests to
 
 ##Directory structure
 The project directory is divided into three parts
-[1] bin/ - a compiled library DLL file
-[2] example/ - a ready to use example
-[3] src/ - the source of the library
+* bin/ - a compiled library DLL file
+* example/ - a ready to use example
+* src/ - the source of the library
 
 
 ##Installation
