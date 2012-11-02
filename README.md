@@ -67,11 +67,9 @@ Response.Redirect(redirectUrl);
 ##Contacts
 If you have any further questions feel free to contact us:
 
-```
-"EVP International", UAB
-Mėnulio g. 7
-LT-04326 Vilnius
-Email: pagalba@gsms.lt
-Tel. +370 (5) 2 03 27 19
-Faksas +370 (5) 2 63 91 79
-```
+"EVP International", UAB    
+Mėnulio g. 7    
+LT-04326 Vilnius    
+Email: pagalba@mokejimai.lt    
+Tel. +370 (5) 2 03 27 19    
+Faksas +370 (5) 2 63 91 79    
