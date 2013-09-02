@@ -35,21 +35,49 @@ namespace EVP.WebToPay.ClientAPI
             EnhancedDictionary<string, string> parameters = new EnhancedDictionary<string, string>(dataQueryParams);
             this._projectId = int.Parse(parameters.Take("projectid"));
             this._orderId = parameters.Take("orderid");
-            this._language = parameters.Take("lang");
             this._amount = int.Parse(parameters.Take("amount"));
             this._currency = parameters.Take("currency");
             this._payment = parameters.Take("payment");
-            this._country = parameters.Take("country");
             this._payText = parameters.Take("paytext");
-            this._firstName = parameters.Take("name");
-            this._lastName = parameters.Take("surename");
             this._status = int.Parse(parameters.Take("status"));
             this._test = HttpQueryUtility.QueryParameterToBoolean(parameters.Take("test"));
-            this._email = parameters.Take("p_email");
-            this._requestId = int.Parse(parameters.Take("requestid"));
-            this._payAmount = int.Parse(parameters.Take("payamount"));
-            this._payCurrency = parameters.Take("paycurrency");
-            this._version = parameters.Take("version");
+
+            if (parameters.ContainsKey("country"))
+            {
+                this._country = parameters.Take("country");
+            }
+            if (parameters.ContainsKey("lang"))
+            {
+                this._language = parameters.Take("lang");
+            }
+            if (parameters.ContainsKey("name"))
+            {
+                this._firstName = parameters.Take("name");
+            }
+            if (parameters.ContainsKey("surename"))
+            {
+                this._lastName = parameters.Take("surename");
+            }
+            if (parameters.ContainsKey("p_email"))
+            {
+                this._email = parameters.Take("p_email");
+            }
+            if (parameters.ContainsKey("requestid"))
+            {
+                this._requestId = int.Parse(parameters.Take("requestid"));
+            }
+            if (parameters.ContainsKey("payamount"))
+            {
+                this._payAmount = int.Parse(parameters.Take("payamount"));
+            }
+            if (parameters.ContainsKey("paycurrency"))
+            {
+                this._payCurrency = parameters.Take("paycurrency");
+            }
+            if (parameters.ContainsKey("version"))
+            {
+                this._version = parameters.Take("version");
+            }
             if (parameters.ContainsKey("account"))
             {
                 this._account = parameters.Take("account");
