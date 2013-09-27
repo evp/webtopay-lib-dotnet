@@ -75,6 +75,8 @@ namespace EVP.WebToPay.ClientAPI
             dataQueryParams["p_state"] = this._paypalState;
             dataQueryParams["p_zip"] = this._paypalZip;
             dataQueryParams["p_countrycode"] = this._paypalCountryCode;
+            dataQueryParams["time_limit"] = this._timeLimit;
+            dataQueryParams["personcode"] = this._personCode;
             dataQueryParams["test"] = HttpQueryUtility.ToQueryParameter(this._test);
             dataQueryParams["repeat_request"] = HttpQueryUtility.ToQueryParameter(this._repeatRequest);
             dataQueryParams["only_payments"] = HttpQueryUtility.ToQueryParameter(this._allowPayments);
