@@ -34,7 +34,7 @@ namespace EVP.WebToPay.ClientAPIExample
                 // Should be saved somewhere and unique for every request.
                 request.OrderId = "ORDER0001"; 
                 request.Amount = 1000;
-                request.Currency = "LTL";
+                request.Currency = "EUR";
                 request.Country = "LT";
                 request.AcceptUrl = siteUrl + "/Accept.aspx";
                 request.CancelUrl = siteUrl + "/Cancel.aspx";
