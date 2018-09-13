@@ -56,7 +56,7 @@ namespace EVP.WebToPay.ClientAPI
             {
                 try
                 {
-                    return wc.DownloadString("https://www.paysera.com/download/public.key");
+                    return wc.DownloadString("https://bank.paysera.com/download/public.key");
                 }
                 catch (Exception ex)
                 {
