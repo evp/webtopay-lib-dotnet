@@ -14,8 +14,8 @@ namespace EVP.WebToPay.ClientAPI
     {
 
         public const string VERSION = "1.6";
-        public const string PAY_URL = "https://www.paysera.com/pay/";
-        public const string SMS_ANSWER_URL = "https://www.paysera.com/psms/respond/";
+        public const string PAY_URL = "https://bank.paysera.com/pay/";
+        public const string SMS_ANSWER_URL = "https://bank.paysera.com/psms/respond/";
 
         private int _projectId;
         private string _signPassword;
