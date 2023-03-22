@@ -1,7 +1,7 @@
 #WebToPay Lib DotNet
 
 ##What is WebToPay Lib DotNet?
-WebToPay Lib DotNet is a library that will allow you to make payment requests to the WebToPay website.
+WebToPay Lib DotNet is a library that will allow you to make payment requests to the Paysera website.
 
 ##Sections
 * [Requirements](#requirements)
@@ -49,7 +49,7 @@ string siteUrl = Request.Url.GetLeftPart(UriPartial.Authority);
 
 request.OrderId = "ORDER0001";
 request.Amount = 1000;
-request.Currency = "LTL";
+request.Currency = "EUR";
 request.Country = "LT";
 request.AcceptUrl = siteUrl + "/Accept.aspx";
 request.CancelUrl = siteUrl + "/Cancel.aspx";
@@ -67,9 +67,8 @@ Response.Redirect(redirectUrl);
 ##Contacts
 If you have any further questions feel free to contact us:
 
-"EVP International", UAB    
-Mėnulio g. 7    
-LT-04326 Vilnius    
+"Paysera LT", UAB    
+Pilaitės pr. 16  
+LT-04352 Vilnius    
 Email: support@paysera.com    
-Tel. +370 (5) 2 03 27 19    
-Faksas +370 (5) 2 63 91 79    
+Tel. +370 5 207 1558 
